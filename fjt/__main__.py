@@ -1,16 +1,15 @@
-import typer
+import sys
 
-import fjt.anime
-import fjt.log
-import fjt.stats
-from fjt.app import app
+from PySide6.QtWidgets import QApplication
 
-app.add_typer(fjt.log.app, name="log")
-app.add_typer(fjt.stats.app, name="stats")
+from fjt.main_window import MainWindow
 
 
 def main():
-    app()
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec())
 
 
 if __name__ == "__main__":

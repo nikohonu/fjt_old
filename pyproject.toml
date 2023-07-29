@@ -1,18 +1,16 @@
 [tool.poetry]
 name = "fjt"
 version = "0.1.0"
-description = "CLI program for immersion tracking"
+description = "\"immersion-bot\" log command helper"
 authors = ["Niko Honu <nikohonu@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "<3.12,>=3.7"
 appdirs = "^1.4.4"
-typer = {extras = ["all"], version = "^0.9.0"}
-simple-term-menu = "^1.6.1"
 peewee = "^3.16.2"
-pytube = "^15.0.0"
+pyside6 = "^6.5.2"
 
 [tool.poetry.group.dev.dependencies]
 pynvim = "^0.4.3"
